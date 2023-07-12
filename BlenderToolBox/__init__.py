@@ -54,6 +54,7 @@ from . setMat_pointCloud import setMat_pointCloud
 from . setMat_poop import setMat_poop
 from . setMat_plastic import setMat_plastic
 from . setMat_VColor import setMat_VColor
+from . setMat_VColor_transparent import setMat_VColor_transparent
 from . setMat_VColorAO import setMat_VColorAO
 from . setMat_VColorEdge import setMat_VColorEdge
 from . setMat_monotone import setMat_monotone
@@ -67,6 +68,7 @@ from . setPointScalars import setPointScalars
 from . subdivision import subdivision
 from . shadowThreshold import shadowThreshold
 from . vertexScalarToUV import vertexScalarToUV
+from . vertexScalarToUV_unnormalized import vertexScalarToUV_unnormalized
 
 derekBlue = (144.0/255, 210.0/255, 236.0/255, 1)
 coralRed = (250.0/255, 114.0/255, 104.0/255, 1)

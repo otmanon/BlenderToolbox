@@ -13,7 +13,7 @@
 # limitations under the License.
 import bpy
 
-def setMat_VColor(mesh, meshVColor):
+def setMat_VColor_transparent(mesh, meshVColor, alpha):
 	mat = bpy.data.materials.new('MeshMaterial')
 	mesh.data.materials.append(mat)
 	mesh.active_material = mat
@@ -41,3 +41,4 @@ def setMat_VColor(mesh, meshVColor):
 	tree.nodes["Principled BSDF"].inputs['Sheen Tint'].default_value = 0
 	tree.links.new(HSVNode.outputs['Color'], BCNode.inputs['Color'])
 	tree.links.new(BCNode.outputs['Color'], tree.nodes['Principled BSDF'].inputs['Base Color'])
+	tree.nodes["Principled BSDF"].inputs['Alpha'].default_value = alpha
